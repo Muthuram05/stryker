@@ -1,0 +1,58 @@
+/* Set the background color */
+.bg-color {
+    background-color: #FEF8F8;
+}
+
+/* Custom width for the form container */
+
+
+/* Style the container */
+.container {
+    max-height: 500px !important; /* Allow the container to grow up to 500px */
+    max-width: 500px !important;
+    margin: 0 auto; /* Center the container horizontally */
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+/* Style the form */
+#loginForm {
+    padding: 15px;
+    background-color:  #f1a115;
+    border-radius: 8px;
+    height: 100%; /* Make the form take up all available space inside the container */
+    overflow-y: auto; /* Add scroll if the content overflows */
+}
+
+/* Input fields styling */
+#username, #password {
+    width: 100%; /* Full width of the container */
+    margin-bottom: 10px; /* Reduced margin */
+    
+    font-size: 14px; /* Smaller font size */
+}
+
+/* Button styling */
+/* Button styling */
+.button {
+    width: 100%; /* Full width for the button */
+    padding: 8px; /* Reduced padding */
+    font-size: 14px; /* Smaller font size */
+    border-radius: 5px;
+    background-color: white; /* Normal button color (blue) */
+    color: rgb(0, 0, 0); /* White text */
+    border: none; /* Remove border */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: #f0c60e; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Optional: Focus state for accessibility */
+.button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 2px rgba(240, 185, 3, 0.5); /* Add custom focus shadow */
+}
+

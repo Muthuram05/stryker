@@ -1,0 +1,19 @@
+body {
+    background-color: #FEF8F8;
+}
+
+/* Style the download button */
+#downloadLog button {
+    background: linear-gradient(to right, #B97806, #F8B100, #DBA92C);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Add hover effect for the button */
+#downloadLog button:hover {
+    background: linear-gradient(to right, #855902, #b88309, #f3b944); /* Darker gradient */
+}

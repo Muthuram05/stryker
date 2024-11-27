@@ -1,0 +1,44 @@
+body {
+    background-color: #FEF8F8;
+    /* background-color: #d6d3d3; */
+}
+
+/* Style the download button */
+.button {
+    background: linear-gradient(to right, #B97806, #F8B100, #DBA92C);
+    color: rgb(20, 18, 18);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Add hover effect for the button */
+.button:hover {
+    background: linear-gradient(to right, #855902, #b88309, #f3b944);
+    /* Darker gradient */
+}
+
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.loader {
+    display: none;
+    width: 300px;
+    --b: 8px; 
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 1px;
+    background: conic-gradient(#0000 10%,#e1a80a) content-box;
+    -webkit-mask:
+      repeating-conic-gradient(#0000 0deg,#000 1deg 20deg,#0000 21deg 36deg),
+      radial-gradient(farthest-side,#0000 calc(100% - var(--b) - 1px),#000 calc(100% - var(--b)));
+    -webkit-mask-composite: destination-in;
+            mask-composite: intersect;
+    animation:l4 1s infinite steps(10);
+    position: fixed;
+    top:40%;
+    left:40%;
+    /* transform: translate(-50%,-50%); */
+  }
+  @keyframes l4 {to{transform: rotate(1turn)}}

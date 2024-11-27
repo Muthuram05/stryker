@@ -1,0 +1,248 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #FEF8F8;
+
+}
+
+.header {
+    background: linear-gradient(to right, #B97806, #F8B100, #DBA92C);
+}
+
+.section {
+    /* display: flex !important; */
+    flex-direction: row;
+    height: 100vh;
+    gap: 30px;
+}
+
+/* .section {
+    display: flex !important;
+    flex-wrap: wrap;
+    /* Allow wrapping of child elements */
+/* min-height: calc(100% - 100px); */
+/* gap: 30px; */
+/* }  */
+
+
+.section-left {
+    width: 200px;
+    /* Fixed width for larger screens */
+}
+
+.active {
+    background: #5B5B5B;
+    /* Active link background color */
+}
+
+a:hover {
+    background: #DBA92C !important;
+
+    /* Background color on hover for all links */
+}
+
+
+/* .section-right {
+    width: calc(100% - 200px);
+    /* Adjust based on left section width */
+/* padding: 20px; */
+/* Padding for the right section */
+/* }  */
+.section-right {
+    width: calc(100% - 200px);
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+
+.container {
+    /* max-width: 100% !important; */
+    /* Max width of the container */
+    margin: 50px auto;
+    /* Center the container */
+    padding: 20px;
+    /* Padding inside the container */
+    border: 1px solid #ccc;
+    /* Border color */
+    border-radius: 5px;
+    /* Rounded corners for the container */
+    background-color: white;
+    /* Background color for the container */
+}
+
+h2 {
+    text-align: center;
+    /* Center align heading */
+}
+
+.alert {
+    color: red;
+    /* Alert text color */
+    text-align: center;
+    /* Center align alert text */
+}
+
+.d-none {
+    display: none;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    display: none;
+    /* Initially hidden */
+    /* position: absolute; */
+    /* Position relative to parent */
+    background-color: #7d7d7d;
+    /* Background color for dropdown */
+    border: 1px solid #ccc;
+    /* Border around dropdown */
+    border-radius: 5px;
+    /* Rounded corners */
+    z-index: 1000;
+    /* Ensure dropdown is on top */
+    width: 100%;
+    /* Match parent width */
+    padding: 0;
+    /* Remove default padding */
+    list-style: none;
+    /* Remove bullet points */
+}
+
+.dropdown a {
+    display: block;
+    /* Block display for dropdown items */
+    padding: 10px 15px;
+    /* Padding inside each link */
+    color: white;
+    /* Text color */
+    text-decoration: none;
+    /* Remove underline */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover */
+}
+
+.dropdown a:hover {
+    background-color: #DB9704;
+    /* Change background on hover */
+    color: white;
+    /* Change text color on hover */
+}
+
+.content-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* Change to flex-start for better layout */
+    min-height: auto;
+    /* Adjust for smaller screens */
+    padding: 20px;
+    /* Add padding */
+    min-height: auto;
+}
+
+.button {
+    background-color: #DB9704;
+    border: none;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    /* Popup background */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    display: none;
+    /* Hidden by default */
+    z-index: 1001;
+}
+
+.popup-content {
+    text-align: center;
+    font-weight: bold;
+    /* Make text bold */
+    color: white;
+    /* White text color */
+}
+
+/* Popup message text */
+#popup-message {
+    font-size: 30px;
+    /* Make the text bigger */
+    margin-bottom: 20px;
+    color: white;
+    /* Ensure popup message text is white */
+}
+
+/* Popup button */
+#close-popup {
+    background-color: #d7932b;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    /* Make the button smaller */
+    font-size: 14px;
+    /* Reduce the font size of the button */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Optional: Add a background for the popup (dark color for better visibility of white text) */
+.popup {
+    background: rgba(0, 0, 0, 0.8);
+    /* Darker background for better contrast */
+}
+
+#close-popup:hover {
+    background-color: #ffcd7f;
+}
+
+#content-area {
+    display: flex;
+    flex-direction: column;
+    /* Stack heading and image vertically */
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+    .section-left {
+        width: 100%;
+        /* Full width on small screens */
+    }
+
+    .section-right {
+        width: 100%;
+        /* Full width on small screens */
+    }
+
+    .section {
+        flex-direction: column;
+        /* Stack vertically */
+    }
+}
